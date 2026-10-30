@@ -1,0 +1,11 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes:
+      - ./config:/config
+    environment:
+      - TZ=Asia/Taipei
+    restart: unless-stopped
+    # 必須使用 host 網路模式，才能讓 Apple HomeKit Bridge 與 ESP32 在區網內自動配對
+    network_mode: host

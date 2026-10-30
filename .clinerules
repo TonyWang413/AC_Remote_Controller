@@ -1,0 +1,16 @@
+# AI Assistant Instructions for AC Remote Controller Project
+
+Whenever this workspace is initialized, the AI assistant should follow these rules:
+
+1. **Auto-Load Project State**:
+   - Immediately check if `./docs/brainstorm_notes.md` exists in the workspace.
+   - Read the contents of `./docs/brainstorm_notes.md` to understand the current architecture, decisions, and current TODOs.
+
+2. **Proactive Documentation Maintenance**:
+   - During the brainstorming and coding sessions, after any significant decision is reached, a component is designed, or a task is finished, proactively update `./docs/brainstorm_notes.md` to reflect the latest status.
+   - Keep the document clean, highly structured, and readable.
+
+3. **Development Guidelines**:
+   - Maintain the architectural boundaries specified in the documentation.
+   - Document any code changes and design rationales clearly.
+   - **Use Relative Paths Only**: Never use absolute paths (such as `/Users/...` or `file:///...`) in any project documentation or files; always use relative paths (e.g., `./docs/system_spec.md`).

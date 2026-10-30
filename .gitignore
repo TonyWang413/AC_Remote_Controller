@@ -1,0 +1,9 @@
+# ESPHome build artifacts and secrets
+.esphome/
+**/.esphome/
+secrets.yaml
+**/secrets.yaml
+
+# macOS system files
+.DS_Store
+**/.DS_Store
